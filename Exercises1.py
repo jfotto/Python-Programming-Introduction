@@ -282,8 +282,12 @@ absolutevalue(4-4)
 Solution:
 """
 #%%
-def absolutevalue(num):
-
+def absolutevalue(in_num):
+    if in_num < 0:
+        out_num = in_num * -1
+    else:
+        out_num = in_num
+    print("The absolute value of ",in_num," is ",out_num)
 
 
 
@@ -386,7 +390,10 @@ Solution:
 #%%
 
 def inches_to_feet2(inches):
-
+    """ converts inches to feet and inches """
+    feet = inches//12  # division by integer with fraction thrown away
+    extra_inches = feet % 12
+    print(inches,"inches is",feet,"feet and",extra_inches,"inches") 
 
 
 
@@ -423,13 +430,13 @@ all the numbers on the same line or different lines. Use a while loop.
 Solution:
 """
 #%%
-
-
-
-
-
-
-
+def count_down():
+    ct = 10
+    while ct > 0:
+        print(ct,end=" ")
+        ct = ct - 1
+    print(" ")
+    print("BLASTOFF!")
 
 #%%
 """
@@ -462,6 +469,12 @@ Solution:
 """
 #%%
 def countdown1():
+    ct = 10
+    for ct in range(10,0,-1):
+        print(ct,end=" ")
+        ct = ct - 1
+    print(" ")
+    print("BLASTOFF!")
 
 
 
