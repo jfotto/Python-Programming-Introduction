@@ -104,7 +104,7 @@ are expected to do and shows how the auto-grader expects it to look.
 """
 #%%
 def problem1_1():
-    pass # replace this pass (a do-nothing) statement with your code
+    print("Problem Set 1")
 
     
 #%%
@@ -116,7 +116,10 @@ numbers x and y on separate lines, the sum printing first.
 """
 #%%
 def problem1_2(x,y):
-    pass # replace this pass (a do-nothing) statement with your code
+    a = x + y
+    b = x * y
+    print ("The SUM of ",x," and ",y," is ",a)
+    print ("The PRODUCT of ",x," and ",y," is ",b)
 
 
 #%% 
