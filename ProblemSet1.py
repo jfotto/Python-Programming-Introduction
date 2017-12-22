@@ -178,7 +178,7 @@ just one space or the auto-grader may not give you credit.
 #%%
 def problem1_4(miles):
     feet = miles * 5280
-    print ("There are",feet,"in",miles,"miles")
+    print ("There are",feet,"feet in",miles,"miles")
 
 
     
@@ -201,11 +201,11 @@ Also be careful to make the phrases exactly as shown for the auto-grader.
 #%%
 def problem1_5(age):
     if age < 7 :
-        print ("Have a glass of milk")
+        print ("Have a glass of milk.")
     elif age < 21:
-        print ("Have a coke")
+        print ("Have a coke.")
     else:
-        print ("Have a martini")
+        print ("Have a martini.")
 
 
 
