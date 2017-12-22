@@ -118,8 +118,10 @@ numbers x and y on separate lines, the sum printing first.
 def problem1_2(x,y):
     a = x + y
     b = x * y
-    print ("The SUM of ",x," and ",y," is ",a)
-    print ("The PRODUCT of ",x," and ",y," is ",b)
+    print (a)
+    print (b)
+#    print ("The SUM of ",x," and ",y," is ",a)
+#    print ("The PRODUCT of ",x," and ",y," is ",b)
 
 
 #%% 
@@ -146,7 +148,11 @@ but be sure this isn't in the submitted function.
 #%%
 def problem1_3(n):
     my_sum = 0
-    pass # replace this pass (a do-nothing) statement with your code
+    while n > 0:
+        my_sum = my_sum + n
+        n = n-1
+    print(my_sum)
+    
 
 
 
@@ -171,7 +177,8 @@ just one space or the auto-grader may not give you credit.
 """
 #%%
 def problem1_4(miles):
-    pass # replace this pass (a do-nothing) statement with your code
+    feet = miles * 5280
+    print ("There are",feet,"in",miles,"miles")
 
 
     
@@ -193,7 +200,12 @@ Also be careful to make the phrases exactly as shown for the auto-grader.
 """
 #%%
 def problem1_5(age):
-    pass # replace this pass (a do-nothing) statement with your code
+    if age < 7 :
+        print ("Have a glass of milk")
+    elif age < 21:
+        print ("Have a coke")
+    else:
+        print ("Have a martini")
 
 
 
@@ -231,8 +243,11 @@ a loop.
 """
 #%%
 def problem1_6():
-    pass # replace this pass (a do-nothing) statement with your code
-
+    ct = 1
+    while ct < 100:
+        print(ct, end = " ")
+        ct = ct + 2
+        
 
 
     
@@ -274,8 +289,17 @@ The area of a trapezoid with bases 3.0 and 4.0 and height 8.0 is 28.0
 """  
 #%%
 def problem1_7():
-    pass # replace this pass (a do-nothing) statement with your code
-
+    b1 = input("Enter the length of one of the bases: ")
+    b2 = input("Enter the length of the other base: ")
+    h = input("Enter the height: ")
+    
+    fb1 = float(b1)
+    fb2 = float(b2)
+    fh  = float(h)
+    
+    area = (.5)*(fb1+fb2)*fh
+    print("The area of a trapezoid with bases",fb1,"and",fb2,"and height",fh,"is",area)
+    
 
 
 
