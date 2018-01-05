@@ -1,10 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jan  3 16:24:06 2018
-
-@author: ottoj
-"""
-
+# - print_file.py *- coding: utf-8 -*-
 """ Opens file and prints its contents line by line. """
 
 import sys     # we need this library to deal with operating system

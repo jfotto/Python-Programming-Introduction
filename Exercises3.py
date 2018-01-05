@@ -370,17 +370,20 @@ Steps:
 Here is how running it should look:
 >python copy_file.py humptydumpty.txt newhumpty.txt
 """
+import sys     # we need this library to deal with operating system
 
-def copy_file(infilename, outfilename):
+infilename = sys.argv[1]
+outfilename = sys.argv[1]
+
     """ Opens two files and copies one into the other line by line. """
-    infile = open(infilename)
-    outfile = open(outfilename,'w')
+infile = open(infilename)
+outfile = open(outfilename,'w')
     
-    for line in infile:
-        outfile.write(line)
+for line in infile:
+    outfile.write(line)
         
-    infile.close()
-    outfile.close()
+infile.close()
+outfile.close()
 #%%
     
 """
@@ -566,9 +569,10 @@ def read_csv_file1(filename):
     """Reads a CSV file and print it as a list of rows."""
     f = open(filename)
     data = []
+    rc = 0
     for row in csv.reader(f):
         data.append(row)
-    print(data)   
+        print(*row)   
     f.close()
 #%%
 """
